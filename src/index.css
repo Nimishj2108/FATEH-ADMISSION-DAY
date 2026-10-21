@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-hindi: 'Rozha One', 'Tiro Devanagari Hindi', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-ink: #261A23;
+  --color-berry: #944F62;
+  --color-cream: #FBF6F0;
+  --color-sky: #9BBFCC;
+}
+
+:root {
+  --ink: #261A23;
+  --berry: #944F62;
+  --cream: #FBF6F0;
+  --sky: #9BBFCC;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #FBF6F0;
+  color: #261A23;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.font-hindi {
+  font-family: 'Rozha One', 'Tiro Devanagari Hindi', serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Hard offset brutalist shadows and borders */
+.brutal-border {
+  border: 2px solid #261A23;
+}
+
+.brutal-shadow-sm {
+  box-shadow: 2px 2px 0px #261A23;
+}
+
+.brutal-shadow {
+  box-shadow: 3px 3px 0px #261A23;
+}
+
+.brutal-shadow-lg {
+  box-shadow: 5px 5px 0px #261A23;
+}
+
+.brutal-shadow-berry {
+  box-shadow: 4px 4px 0px #944F62;
+}
+
+.brutal-shadow-sky {
+  box-shadow: 4px 4px 0px #9BBFCC;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #261A23;
+  border-radius: 9999px;
+}
